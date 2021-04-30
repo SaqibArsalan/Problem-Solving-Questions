@@ -18,11 +18,11 @@ absolute differences are |1 - 2| = 1, |2 - 3| = 1, |3 -
 # The function accepts INTEGER_ARRAY arr as parameter.
 
 
-def minDifference(arr):
+def min_difference(arr):
 	abs_sum = 0
 	sorted_arr = sorted(arr)
 	for i in range(len(sorted_arr)-1):
 		abs_sum = abs_sum + abs(sorted_arr[i]-sorted_arr[i+1])
 	return abs_sum
 
-print(minDifference([1,2,3,4,5]))
+print(min_difference([1,2,3,4,5]))
